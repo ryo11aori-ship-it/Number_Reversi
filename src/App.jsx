@@ -138,7 +138,7 @@ useEffect(()=>{
 if(isAITurn){
 const timer=setTimeout(()=>{
 const currentState={board,inventory,turn};
-const bestMove=getBestMoveMCTS(currentState,1000);
+const bestMove=getBestMoveMCTS(currentState,6000);
 if(bestMove){
 placeChip(bestMove.r,bestMove.c,bestMove.chip);
 }
